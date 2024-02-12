@@ -1,0 +1,133 @@
+<testsuites><testsuite package="scalable" id="0" name="scalable" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="10" failures="0" errors="2" time="0"><properties></properties><testcase name="Casting to bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="Casting to int function" classname="scalable.scalable" time="0"></testcase><testcase name="Bigger bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="Smaller bitarray function" classname="scalable.scalable" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m smaller_b: [0, 1, 0, 0, 0, 1] and [0, 1, 0, 0, 0, 1]
+
+   Expected: `&#27;[32mfalse&#27;[0m'
+   Received: `&#27;[31mtrue&#27;[0m'
+
+</error></testcase><testcase name="Bigger or Equal bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="Bigger or Equal bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="add_b bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="diff_b or Equal bitarray function" classname="scalable.scalable" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m diff_b: [0, 0, 1, 0, 0, 1] and [0, 0, 1, 1, 0, 1]
+
+   Expected: `&#27;[32m[1; 0; 0; 1]&#27;[0m'
+   Received: `&#27;[31m[1; 0; 0; 1; 1]&#27;[0m'
+
+</error></testcase><testcase name="mult_b or Equal bitarray function" classname="scalable.scalable" time="0"></testcase><testcase name="mod_b or Equal bitarray function" classname="scalable.scalable" time="0"></testcase></testsuite><testsuite package="scalable_basic_arithmetics" id="1" name="scalable_basic_arithmetics" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="2" failures="0" errors="0" time="0"><properties></properties><testcase name="GCD on bitarrays function" classname="scalable_basic_arithmetics.scalable_basic_arithmetics" time="0"></testcase><testcase name="Bezout on bitarrays function" classname="scalable_basic_arithmetics.scalable_basic_arithmetics" time="0"></testcase></testsuite><testsuite package="scalable_power" id="2" name="scalable_power" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="4" failures="0" errors="2" time="0"><properties></properties><testcase name="Pow on bitarrays function" classname="scalable_power.scalable_power" time="0"></testcase><testcase name="Power on bitarrays function" classname="scalable_power.scalable_power" time="0"></testcase><testcase name="Modular power on bittarays function" classname="scalable_power.scalable_power" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m [1, 1]^[0, 1, 1, 0, 1] modulo [0, 1, 1, 0, 1]
+
+   Expected: `&#27;[32m[0; 0; 1; 0; 1]&#27;[0m'
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="Modular power with prime modulo on bitarrays function" classname="scalable_power.scalable_power" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m [1, 1]^[0, 0, 0, 1, 1] modulo [0, 1, 1, 1]
+
+   Expected: `&#27;[32m[0; 1]&#27;[0m'
+   Received: `&#27;[31m[1]&#27;[0m'
+
+</error></testcase></testsuite><testsuite package="scalable_test_primes" id="3" name="scalable_test_primes" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="2" failures="0" errors="2" time="0"><properties></properties><testcase name="Is prime on bitarrays function" classname="scalable_test_primes.scalable_test_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m is_prime: [0, 1, 0, 1]
+
+   Expected: `&#27;[32mtrue&#27;[0m'
+   Received: `&#27;[31mfalse&#27;[0m'
+
+</error></testcase><testcase name="Is pseudo-prime on bitarrays function" classname="scalable_test_primes.scalable_test_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m is_pseudo_prime: [0, 0, 1] with [[0, 0, 1], [0, 0, 0, 1], [0, 0, 0, 0, 1], [0, 0, 0, 1, 1]]
+
+   Expected: `&#27;[32mtrue&#27;[0m'
+   Received: `&#27;[31mfalse&#27;[0m'
+
+</error></testcase></testsuite><testsuite package="scalable_generate_primes" id="4" name="scalable_generate_primes" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="4" failures="0" errors="4" time="0"><properties></properties><testcase name="Eratosthenes initialisation with bitarrays function" classname="scalable_generate_primes.scalable_generate_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m init_eratosthenes: [0, 0, 1]
+
+   Expected: `&#27;[32m[[0; 0; 1]]&#27;[0m'
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="Eratosthenes with bitarrays function" classname="scalable_generate_primes.scalable_generate_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m eratosthenes: [0, 0, 1]
+
+   Expected: `&#27;[32m[[0; 0; 1]]&#27;[0m'
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="Double primes with bitarrays function" classname="scalable_generate_primes.scalable_generate_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m double_primes: [0, 0, 0, 1, 0, 1]
+
+   Expected: `&#27;[32m[([0; 0; 1], [0; 1; 0; 1]); ([0; 1; 1], [0; 1; 1; 1]);
+               ([0; 1; 0; 1], [0; 1; 1; 0; 1]);
+               ([0; 1; 1; 0; 1], [0; 1; 1; 1; 0; 1])]&#27;[0m'
+
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="Twin primes with bitarrays function" classname="scalable_generate_primes.scalable_generate_primes" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m twin_primes: [0, 0, 0, 1, 0, 1]
+
+   Expected: `&#27;[32m[([0; 1; 1], [0; 1; 0; 1]); ([0; 1; 0; 1], [0; 1; 1; 1]);
+               ([0; 1; 1; 0; 1], [0; 1; 0; 1; 1]);
+               ([0; 1; 0; 0; 0; 1], [0; 1; 1; 0; 0; 1])]&#27;[0m'
+
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase></testsuite><testsuite package="scalable_encoding_msg" id="5" name="scalable_encoding_msg" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="2" failures="0" errors="2" time="0"><properties></properties><testcase name="Encode with bitarrays function" classname="scalable_encoding_msg.scalable_encoding_msg" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m encode: &quot;Bashar&quot; on 7 bits
+
+   Expected: `&#27;[32m[0; 0; 1; 0; 0; 1; 1; 1; 1; 0; 0; 0; 0; 1; 1; 0; 0; 0; 
+               1; 0; 1; 1; 1; 1; 0; 0; 1; 1; 1; 1; 0; 0; 0; 0; 1; 1; 
+               0; 1; 0; 0; 0; 0; 1]&#27;[0m'
+
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="Decode with bitarrays function" classname="scalable_encoding_msg.scalable_encoding_msg" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m decode: [0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1] on 7 bits
+
+   Expected: `&#27;[32m&quot;Bashar&quot;&#27;[0m'
+   Received: `&#27;[31m&quot;&quot;&#27;[0m'
+
+</error></testcase></testsuite><testsuite package="scalable_ciphers" id="6" name="scalable_ciphers" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="4" failures="0" errors="4" time="0"><properties></properties><testcase name="Generate RSA keys with bitarrays function" classname="scalable_ciphers.scalable_ciphers" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m generate_rsa_keys: with [0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 1] and [0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 1] (we check if e is the inverse of d modulo n)
+
+   Expected: `&#27;[32mtrue&#27;[0m'
+   Received: `&#27;[31mfalse&#27;[0m'
+
+</error></testcase><testcase name="RSA encryption with bitarrays function" classname="scalable_ciphers.scalable_ciphers" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m encrypt_rsa: [0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1] with n=[0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1] and e=[0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1]
+
+   Expected: `&#27;[32m[0; 1; 0; 0; 0; 0; 0; 1; 1; 0; 0; 0; 1; 0; 1; 0; 0; 0; 
+               1; 1; 1; 0; 1; 0; 0; 0; 0; 1]&#27;[0m'
+
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="RSA decryption with bitarrays function" classname="scalable_ciphers.scalable_ciphers" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m decrypt_rsa: [0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1] with n=[0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1] and e=[0, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1]
+
+   Expected: `&#27;[32m[0; 1; 0; 1; 0; 1; 0; 0; 1; 0; 1; 0; 1; 0; 0; 1; 0; 0; 0; 1]&#27;[0m'
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase><testcase name="El Gamal cryptosystem with bitarrays functions" classname="scalable_ciphers.scalable_ciphers" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m el_gamal functions: keys generated with g=[], message [0, 0, 1, 0, 1, 0, 1] is encrypted and then decrypted, we check if the result is equal to the original message
+
+   Expected: `&#27;[32m[0; 0; 1; 0; 1; 0; 1]&#27;[0m'
+   Received: `&#27;[31m[]&#27;[0m'
+
+</error></testcase></testsuite><testsuite package="scalable_break_ciphers" id="7" name="scalable_break_ciphers" timestamp="2024-02-12T16:14:34" hostname="localhost" tests="1" failures="0" errors="1" time="0"><properties></properties><testcase name="RSA key breaking with bitarrays function" classname="scalable_break_ciphers.scalable_break_ciphers" time="0"><error message="test crashed" type="exception raised">Alcotest assertion failure
+&#27;[1mFile &quot;list.ml&quot;, line 110, character 12:
+&#27;[0m&#27;[31mFAIL&#27;[0m break: n=[0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 1] and e=[0, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1]
+
+   Expected: `&#27;[32m([0; 1; 1; 1; 1; 0; 1; 1; 1; 0; 1; 1; 0; 0; 1],
+               [0; 1; 0; 1; 0; 1; 1; 1; 1; 0; 1; 1; 0; 0; 1])&#27;[0m'
+
+   Received: `&#27;[31m([], [])&#27;[0m'
+
+</error></testcase></testsuite></testsuites>

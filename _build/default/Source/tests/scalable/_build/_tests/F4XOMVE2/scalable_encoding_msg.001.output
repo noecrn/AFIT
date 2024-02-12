@@ -1,0 +1,14 @@
+[33mASSERT[0m decode: [0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1] on 7 bits
+[1mFile "list.ml", line 110, character 12:
+[0m[31mFAIL[0m decode: [0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 1] on 7 bits
+
+   Expected: `[32m"Bashar"[0m'
+   Received: `[31m""[0m'
+
+Raised at Alcotest_engine__Test.check in file "src/alcotest-engine/test.ml", line 200, characters 4-261
+Called from Stdlib__list.iter in file "list.ml", line 110, characters 12-15
+Called from Junit_alcotest.wrap_test.test in file "alcotest/junit_alcotest.ml", line 20, characters 6-13
+Re-raised at Junit_alcotest.wrap_test.test in file "alcotest/junit_alcotest.ml", line 47, characters 6-15
+Called from Alcotest_engine__Core.Make.protect_test.(fun) in file "src/alcotest-engine/core.ml", line 181, characters 17-23
+Called from Alcotest_engine__Monad.Identity.catch in file "src/alcotest-engine/monad.ml", line 24, characters 31-35
+

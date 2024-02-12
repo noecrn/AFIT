@@ -1,0 +1,5 @@
+[33mASSERT[0m mult_b: [0, 1] and [0, 0, 1, 1, 0, 1]
+[33mASSERT[0m mult_b: [1, 1] and [0, 0, 1, 1, 0, 1]
+[33mASSERT[0m mult_b: [] and [0, 0, 1, 1, 0, 1]
+[33mASSERT[0m mult_b: [0, 0, 1] and [0, 1, 0, 0, 0, 1]
+[33mASSERT[0m mult_b: [0, 1, 1] and [0, 1, 1]
